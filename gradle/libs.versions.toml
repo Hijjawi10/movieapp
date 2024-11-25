@@ -1,0 +1,100 @@
+[versions]
+agp = "8.5.2"
+coilCompose = "2.4.0"
+coilComposeVersion = "2.2.2"
+constraintlayoutCompose = "1.1.0"
+converterMoshi = "2.9.0"
+firebaseAuthKtx = "23.1.0"
+firebaseFirestoreKtx = "25.1.1"
+googleServices = "4.4.2"
+gson = "2.10.1"
+hiltAndroid = "2.51.1"
+hiltAndroidCompiler = "2.51.1"
+hiltAndroidCompilerVersion = "2.51.1"
+hiltCompiler = "1.2.0"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.10.01"
+lifecycleViewmodelCompose = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"
+moshi = "1.15.0"
+moshiKotlin = "1.15.0"
+moshiKotlinVersion = "1.15.0"
+moshiVersion = "1.15.0"
+navigationCompose = "2.8.3"
+retrofit = "2.9.0"
+roomRuntime = "2.6.1"
+runtimeLivedata = "1.7.5"
+squareupMoshiKotlin = "1.15.0"
+
+[libraries]
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompiler" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltCompiler" }
+#noinspection SimilarGradleDependency
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+#noinspection SimilarGradleDependency
+androidx-lifecycle-viewmodel-compose-v261 = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+#noinspection SimilarGradleDependency
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+#noinspection SimilarGradleDependency
+androidx-lifecycle-viewmodel-ktx-v261 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtimeLivedata" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+coil-compose-v222 = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterMoshi" }
+converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "converterMoshi" }
+firebase-auth-ktx = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+#noinspection SimilarGradleDependency
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidCompiler" }
+#noinspection SimilarGradleDependency
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+#noinspection SimilarGradleDependency
+hilt-android-compiler-v245 = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompilerVersion" }
+#noinspection SimilarGradleDependency
+hilt-android-v245 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+#noinspection SimilarGradleDependency
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
+#noinspection SimilarGradleDependency
+moshi-kotlin-v1130 = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "squareupMoshiKotlin" }
+moshi-kotlin-v1140 = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlinVersion" }
+#noinspection SimilarGradleDependency
+moshi-v1140 = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+#noinspection SimilarGradleDependency
+squareup-moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshiVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+#noinspection SimilarGradleDependency
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#noinspection SimilarGradleDependency
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
