@@ -1,7 +1,7 @@
 [versions]
 agp = "8.5.2"
 coilCompose = "2.4.0"
-coilComposeVersion = "2.2.2"
+coilComposeVersion = "2.4.0"
 constraintlayoutCompose = "1.1.0"
 converterMoshi = "2.9.0"
 firebaseAuthKtx = "23.1.0"
@@ -17,20 +17,17 @@ coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
+ktorKtorClientAndroidVersion = "3.0.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
-composeBom = "2024.10.01"
-lifecycleViewmodelCompose = "2.8.7"
-lifecycleViewmodelKtx = "2.8.7"
+composeBom = "2024.11.00"
 moshi = "1.15.0"
 moshiKotlin = "1.15.0"
 moshiKotlinVersion = "1.15.0"
 moshiVersion = "1.15.0"
-navigationCompose = "2.8.3"
 retrofit = "2.9.0"
 roomRuntime = "2.6.1"
 runtimeLivedata = "1.7.5"
-squareupMoshiKotlin = "1.15.0"
 
 [libraries]
 androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
@@ -40,17 +37,15 @@ androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-com
 #noinspection SimilarGradleDependency
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
 #noinspection SimilarGradleDependency
-androidx-lifecycle-viewmodel-compose-v261 = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
-#noinspection SimilarGradleDependency
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
 #noinspection SimilarGradleDependency
-androidx-lifecycle-viewmodel-ktx-v261 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
-androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
 androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtimeLivedata" }
+#noinspection SimilarGradleDependency
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+#noinspection SimilarGradleDependency
 coil-compose-v222 = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterMoshi" }
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "converterMoshi" }
@@ -66,6 +61,7 @@ hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", ve
 hilt-android-compiler-v245 = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompilerVersion" }
 #noinspection SimilarGradleDependency
 hilt-android-v245 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+io-ktor-ktor-client-android2 = { module = "io.ktor:ktor-client-android", version.ref = "ktorKtorClientAndroidVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -80,9 +76,12 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 #noinspection SimilarGradleDependency
+ktor-client-json = { module = "io.ktor:ktor-client-json", version.ref = "ktorKtorClientAndroidVersion" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorKtorClientAndroidVersion" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktorKtorClientAndroidVersion" }
+#noinspection SimilarGradleDependency
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
 #noinspection SimilarGradleDependency
-moshi-kotlin-v1130 = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "squareupMoshiKotlin" }
 moshi-kotlin-v1140 = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlinVersion" }
 #noinspection SimilarGradleDependency
 moshi-v1140 = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
@@ -94,7 +93,5 @@ squareup-moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshiVers
 android-application = { id = "com.android.application", version.ref = "agp" }
 #noinspection SimilarGradleDependency
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-#noinspection SimilarGradleDependency
-org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

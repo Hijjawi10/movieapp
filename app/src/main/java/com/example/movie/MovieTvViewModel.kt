@@ -5,9 +5,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MovieTvViewModel : ViewModel() {
-    private val movieTvRepository = MovieTvRepository()
+
+class MovieTvViewModel @Inject constructor(
+    private val movieTvRepository: MovieTvRepository = MovieTvRepository()
+) : ViewModel() {
     private val movieTvUseCase = GetMovieTvUseCase(movieTvRepository)
 
     private val _movieTv = MutableLiveData<List<Result>>()

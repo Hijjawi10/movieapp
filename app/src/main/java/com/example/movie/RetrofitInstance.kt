@@ -36,4 +36,3 @@ object RetrofitInstance {
         retrofit.create(MovieTvService::class.java)
     }
 }
-

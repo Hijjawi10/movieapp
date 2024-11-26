@@ -108,4 +108,10 @@ dependencies {
 
     implementation (libs.androidx.constraintlayout.compose)
 
+    implementation (libs.io.ktor.ktor.client.android2)
+    implementation (libs.ktor.client.json)
+    implementation (libs.ktor.client.serialization)
+    implementation (libs.ktor.client.logging)
+
+
 }
