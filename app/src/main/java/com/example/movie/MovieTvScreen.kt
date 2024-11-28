@@ -31,7 +31,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -49,11 +48,11 @@ import kotlin.random.Random
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MovieTvScreen(viewModel: MovieTvViewModel) {
-    val movieTvState by viewModel.movieTv.observeAsState(emptyList())
+    val movieTvState by viewModel.movieTv.collectAsState()
     val movieTv = remember { MutableStateFlow("") }
-    val movieTvStatequery by movieTv.collectAsState()
+    val movieTvStateQuery by movieTv.collectAsState()
 
-    LaunchedEffect(movieTvStatequery) {
+    LaunchedEffect(movieTvStateQuery) {
         viewModel.fetchMovieTv(page = 1)
     }
 
@@ -62,9 +61,11 @@ fun MovieTvScreen(viewModel: MovieTvViewModel) {
             TopAppBar(title = { Text("Movies & TV Shows") })
         }
     ) { padding ->
-        Column(modifier = Modifier.fillMaxSize().padding(padding)) {
+        Column(modifier = Modifier
+            .fillMaxSize()
+            .padding(padding)) {
             OutlinedTextField(
-                value = movieTvStatequery,
+                value = movieTvStateQuery,
                 onValueChange = { movieTv.value = it },
                 label = { Text("Enter movie or TV show name") },
                 modifier = Modifier

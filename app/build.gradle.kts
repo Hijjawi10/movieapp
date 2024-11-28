@@ -108,10 +108,25 @@ dependencies {
 
     implementation (libs.androidx.constraintlayout.compose)
 
-    implementation (libs.io.ktor.ktor.client.android2)
+    implementation (libs.ktor.client.core)
+    implementation (libs.ktor.client.cio)
+    implementation (libs.ktor.client.content.negotiation)
+    implementation (libs.ktor.serialization.gson)
+    implementation (libs.androidx.lifecycle.viewmodel.ktx.v262)
+    implementation (libs.androidx.lifecycle.livedata.ktx)
+
+
+    implementation(libs.ktor.client.core.v234)
+
+    implementation(libs.ktor.client.okhttp)
+
+    implementation(libs.ktor.serialization.kotlinx.json)
+
+    implementation(libs.kotlinx.serialization.json)
+
+    implementation (libs.ktor.client.android)
     implementation (libs.ktor.client.json)
     implementation (libs.ktor.client.serialization)
     implementation (libs.ktor.client.logging)
-
 
 }

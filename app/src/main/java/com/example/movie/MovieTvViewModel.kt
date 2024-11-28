@@ -1,20 +1,18 @@
 package com.example.movie
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-
-class MovieTvViewModel @Inject constructor(
-    private val movieTvRepository: MovieTvRepository = MovieTvRepository()
-) : ViewModel() {
+class MovieTvViewModel : ViewModel() {
+    private val movieTvRepository = MovieTvRepository()
     private val movieTvUseCase = GetMovieTvUseCase(movieTvRepository)
 
-    private val _movieTv = MutableLiveData<List<Result>>()
-    val movieTv: LiveData<List<Result>> = _movieTv
+    private val _movieTv = MutableStateFlow<List<Result>>(emptyList())
+    val movieTv: StateFlow<List<Result>> = _movieTv
 
     private var currentPage = 1
     var isFetching = false
